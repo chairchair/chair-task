@@ -8,6 +8,7 @@
 
 header {
     width: 1263px;
+    margin: 0 auto;
     background-color: #ffffff;
     position: fixed;
     border-bottom: solid 1px rgba(176, 176, 176, 0.3);
@@ -79,6 +80,7 @@ header {
 
 .main {
     width: 1263px;
+margin: 0 auto;
 }
 
 /* モーダルスタート */
@@ -914,6 +916,7 @@ header {
 
 footer {
     width: 1263px;
+margin: 0 auto;
 }
 
 .f-menu {
