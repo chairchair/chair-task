@@ -489,3 +489,7 @@ template {
 [hidden] {
   display: none;
 }
+
+::-ms-expand { /* select要素のデザインを無効にする（IE用） */
+  display: none;
+  }

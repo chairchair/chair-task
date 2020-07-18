@@ -36,7 +36,7 @@ $(function () {
         $(this).css('text-decoration', 'none');
     });
 
-    // リンク要素のopcity
+    // リンク要素のopacity
     $('.opa').hover(function () {
         $(this).css('opacity', '0.9');
     }, function () {
@@ -52,5 +52,4 @@ $(function () {
     $('.listing a').click(function () {
         $(this).css('opacity', '0.8');
     });
-
 });

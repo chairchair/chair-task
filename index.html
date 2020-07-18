@@ -15,7 +15,7 @@
 
 <body>
 
-<!-- ヘッダースタート -->
+    <!-- ヘッダースタート -->
     <header>
         <nav class="main-nav">
             <ul>
@@ -30,7 +30,7 @@
         </nav>
         <p class="h-start" id="modal-switch">はじめる</p>
     </header>
-<!-- ヘッダーラスト -->
+    <!-- ヘッダーラスト -->
 
     <main>
         <!-- モーダルスタート -->
@@ -38,25 +38,27 @@
             <div class="modal-w">
                 <p class="entry"><i class="fas fa-times" id="modal-close"></i>ログイン</p>
                 <div class="m-scroll">
-                    <form action="" method="post" class="m-form">
-                        <label class="country">国／地域</label>
-                        <select name="log-on-place" class="log-on-place">
-                            <option value="">日本（+81)</option>
-                            <option value="">コンゴ (+242)</option>
-                            <option value="">イギリス (+44)</option>
-                        </select>
-                        <input type="text" name="log-on-phone" class="log-on-phone" placeholder="電話番号">
+                    <form action="" method="post">
+                        <div class="m-form">
+                            <label class="country">国／地域</label>
+                            <select name="log-on-place" class="log-on-place">
+                                <option value="" selected>日本（+81)</option>
+                                <option value="">コンゴ (+242)</option>
+                                <option value="">イギリス (+44)</option>
+                            </select>
+                            <input type="text" name="log-on-phone" class="log-on-phone" placeholder="電話番号">
+                        </div>
                     </form>
                     <p class="m-text">番号確認のため、電話またはSMSでご連絡いたします。 SMS基本料金およびデータ通信料がかかります。</p>
                     <p class="continue">続行する</p>
                     <p class="m-center">または</p>
                     <ul class="social-a">
-                        <li class="s-account"><img src="./img/mail-icon.gif" alt="mail"><a href="">メールアドレスで続行</a></li>
-                        <li class="s-account"><img src="./img/facebook-icon.gif" alt="facebook"><a
+                        <li class="s-account"><img src="./img/mail-icon.png" alt="mail"><a href="">メールアドレスで続行</a></li>
+                        <li class="s-account"><img src="./img/facebook-icon.png" alt="facebook"><a
                                 href="">Facebookで続行</a></li>
-                        <li class="s-account"><img src="./img/google-icon.gif" alt="google"><a href="">Googleで続行</a>
+                        <li class="s-account"><img src="./img/google-icon.png" alt="google"><a href="">Googleで続行</a>
                         </li>
-                        <li class="s-account"><img src="./img/apple-icon.gif" alt="apple"><a href="">Appleで続行</a></li>
+                        <li class="s-account"><img src="./img/apple-icon.png" alt="apple"><a href="">Appleで続行</a></li>
                     </ul>
                     <p class="already-a">すでにアカウントをお持ちですか？<a href="">ログイン</a></p>
                 </div>
@@ -141,10 +143,11 @@
             <div class="host-into-dennis">
                 <div class="example">
                     <p class="example-p01">
-                        <span>❝<br></span>「ホスト保証」があったからAirbnb参加を決めたといっても過言でないほどで、被害やトラブルがあったときに頼れるサポートがあるのは本当にありがたいですね。
+                        <img class="example-icon" src="./img/icon01.png"
+                            alt="example-icon"><br>「ホスト保証」があったからAirbnb参加を決めたといっても過言でないほどで、被害やトラブルがあったときに頼れるサポートがあるのは本当にありがたいですね。
                     </p>
                     <p class="example-p02">Dennisさんはロンドンのホスト。自由度の高さに魅力を感じています</p>
-                    <p class="example-link"><a href="">ホスト実践例をチェック</a></p>
+                    <a class="example-link" href="">ホスト実践例をチェック</a>
                 </div>
                 <img class="dennis" src="./img/8e6c68cc-e714-4849-bad9-464abf58e84a.jpg" alt="dennis">
             </div>
@@ -188,29 +191,30 @@
             <div class="host-into-tessa">
                 <img class="tessa" src="./img/4e8524b4-205e-4fdf-9f0a-f1f36905c8f6.jpg" alt="example-img">
                 <div class="example">
-                    <p class="example-p01"><span>❝</span>ホスト収入でキッチンリフォーム。お家をいろいろアップグレードしました。</p>
+                    <p class="example-p01"><img class="example-icon" src="./img/icon01.png"
+                            alt="example-icon"><br>ホスト収入でキッチンリフォーム。お家をいろいろアップグレードしました。</p>
                     <p class="example-p02">Tessaさんはロンドン在住。ホストになって世界が（懐も）広がりました</p>
-                    <p class="example-link"><a href="">ホスト実践例をチェック</a></p>
+                    <a class="example-link href="">ホスト実践例をチェック</a>
                 </div>
             </div>
         </section>
         <!-- シンプル決済 ラスト -->
 
         <!-- 夢を共有　スタート -->
-        <section class="dream-share">
-            <h2>夢を共有する仲間が世界中に</h2>
-            <div class="d-share-text">
-                <p class="d-share-p01">290万</p>
-                <p class="d-share-p02">Airbnbのホスト</p>
-            </div>
-            <div class="d-share-text">
-                <p class="d-share-p01">80万</p>
-                <p class="d-share-p02">Airbnbにおける毎晩の平均宿泊数</p>
-            </div>
-            <div class="d-share-text">
-                <p class="d-share-p01">14,000</p>
-                <p class="d-share-p02">月あたりの新規登録ホスト数</p>
-            </div>
+        <section class=" dream-share">
+                        <h2>夢を共有する仲間が世界中に</h2>
+                        <div class="d-share-text">
+                            <p class="d-share-p01">290万</p>
+                            <p class="d-share-p02">Airbnbのホスト</p>
+                        </div>
+                        <div class="d-share-text">
+                            <p class="d-share-p01">80万</p>
+                            <p class="d-share-p02">Airbnbにおける毎晩の平均宿泊数</p>
+                        </div>
+                        <div class="d-share-text">
+                            <p class="d-share-p01">14,000</p>
+                            <p class="d-share-p02">月あたりの新規登録ホスト数</p>
+                        </div>
         </section>
         <!-- 夢を共有　ラスト -->
 
@@ -280,70 +284,72 @@
             <a href="">はじめる</a>
         </section>
         <!-- リスティング　ラスト -->
-
-        <!-- フッタースタート -->
-        <footer>
-            <div class="f-menu">
-                <ul>
-                    <li class="f-menu-top">企業情報</li>
-                    <li><a class="u-line opa" href="">ダイバーシティ＆ビロンギング</a></li>
-                    <li><a class="u-line opa" href="">アクセシビリティ対応</a></li>
-                    <li><a class="u-line opa" href="">信頼＆安全</a></li>
-                    <li><a class="u-line opa" href="">Airbnb Citizen</a></li>
-                    <li><a class="u-line opa" href="">オリンピック</a></li>
-                    <li><a class="u-line opa" href="">ニュースルーム</a></li>
-                </ul>
-                <ul>
-                    <li class="f-menu-top">コミュニティ</li>
-                    <li><a class="u-line opa" href="">Airbnb Magazine</a></li>
-                    <li><a class="u-line opa" href="">Airbnbアソシエイト</a></li>
-                    <li><a class="u-line opa" href="">Airbnbビジネスプログラム</a></li>
-                    <li><a class="u-line opa" href="">お友達を招待</a></li>
-                    <li><a class="u-line opa" href="">採用情報</a></li>
-                </ul>
-                <ul>
-                    <li class="f-menu-top">ホスト</li>
-                    <li><a class="u-line opa" href="">お部屋を掲載</a></li>
-                    <li><a class="u-line opa" href="">オンライン体験をホスティングしよう</a></li>
-                    <li><a class="u-line opa" href="">CEOブライアン・チェスキーからのメッセージ</a></li>
-                    <li><a class="u-line opa" href="">責任あるホスティング</a></li>
-                    <li><a class="u-line opa" href="">オープンホーム</a></li>
-                    <li><a class="u-line opa" href="">リソースセンター</a></li>
-                    <li><a class="u-line opa" href="">コミュニティセンター</a></li>
-                </ul>
-                <ul>
-                    <li class="f-menu-top">サポート</li>
-                    <li><a class="u-line opa" href="">新型コロナウイルスに関する最新情報</a></li>
-                    <li><a class="u-line opa" href="">ヘルプセンター</a></li>
-                    <li><a class="u-line opa" href="">キャンセルオプション</a></li>
-                    <li><a class="u-line opa" href="">近隣コミュニティサポート</a></li>
-                </ul>
-            </div>
-            <div class="f-bottom">
-                <div class="copyright">
-                    <p class="cr-p01 u-line opa">Airbnb Global Services Limited<br> 観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)
-                    </p>
-                    <p class="cr-p02">© 2020 Airbnb, Inc. All rights reserved</p>
-                    <ul>
-                        <li><a class="u-line opa" href="">プライバシー</a></li>
-                        <li><a class="u-line opa" href="">利用規約</a></li>
-                        <li><a class="u-line opa" href="">サイトマップ</a></li>
-                        <li><a class="u-line opa" href="">企業情報</a></li>
-                    </ul>
-                </div>
-                <div class="sns-link">
-                    <ul>
-                        <li class="opa"><a href=""><img class="earth" src="./img/earth.gif" alt="earth"><span>日本語</span> (<span>JP</span>).</a></li>
-                        <li class="jpy opa"><a href="">¥ <span>JPY</span></a></li>
-                        <li class="sns-icon opa"><a href=""></a><i class="fab fa-facebook-f"></i></li>
-                        <li class="sns-icon opa"><a href=""></a><i class="fab fa-twitter"></i></li>
-                        <li class="sns-icon opa"><a href=""><img class="insta-logo" src="./img/instagram.gif" alt="instagram-logo"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-        <!-- フッターラスト -->
-
     </main>
+    <!-- フッタースタート -->
+    <footer>
+        <div class="f-menu">
+            <ul>
+                <li class="f-menu-top">企業情報</li>
+                <li><a class="u-line opa" href="">ダイバーシティ＆ビロンギング</a></li>
+                <li><a class="u-line opa" href="">アクセシビリティ対応</a></li>
+                <li><a class="u-line opa" href="">信頼＆安全</a></li>
+                <li><a class="u-line opa" href="">Airbnb Citizen</a></li>
+                <li><a class="u-line opa" href="">オリンピック</a></li>
+                <li><a class="u-line opa" href="">ニュースルーム</a></li>
+            </ul>
+            <ul>
+                <li class="f-menu-top">コミュニティ</li>
+                <li><a class="u-line opa" href="">Airbnb Magazine</a></li>
+                <li><a class="u-line opa" href="">Airbnbアソシエイト</a></li>
+                <li><a class="u-line opa" href="">Airbnbビジネスプログラム</a></li>
+                <li><a class="u-line opa" href="">お友達を招待</a></li>
+                <li><a class="u-line opa" href="">採用情報</a></li>
+            </ul>
+            <ul>
+                <li class="f-menu-top">ホスト</li>
+                <li><a class="u-line opa" href="">お部屋を掲載</a></li>
+                <li><a class="u-line opa" href="">オンライン体験をホスティングしよう</a></li>
+                <li><a class="u-line opa" href="">CEOブライアン・チェスキーからのメッセージ</a></li>
+                <li><a class="u-line opa" href="">責任あるホスティング</a></li>
+                <li><a class="u-line opa" href="">オープンホーム</a></li>
+                <li><a class="u-line opa" href="">リソースセンター</a></li>
+                <li><a class="u-line opa" href="">コミュニティセンター</a></li>
+            </ul>
+            <ul>
+                <li class="f-menu-top">サポート</li>
+                <li><a class="u-line opa" href="">新型コロナウイルスに関する最新情報</a></li>
+                <li><a class="u-line opa" href="">ヘルプセンター</a></li>
+                <li><a class="u-line opa" href="">キャンセルオプション</a></li>
+                <li><a class="u-line opa" href="">近隣コミュニティサポート</a></li>
+            </ul>
+        </div>
+        <div class="f-bottom">
+            <div class="copyright">
+                <p class="cr-p01 u-line opa">Airbnb Global Services Limited<br> 観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)
+                </p>
+                <p class="cr-p02">© 2020 Airbnb, Inc. All rights reserved</p>
+                <ul>
+                    <li><a class="u-line opa" href="">プライバシー</a></li>
+                    <li><a class="u-line opa" href="">利用規約</a></li>
+                    <li><a class="u-line opa" href="">サイトマップ</a></li>
+                    <li><a class="u-line opa" href="">企業情報</a></li>
+                </ul>
+            </div>
+            <div class="sns-link">
+                <ul>
+                    <li class="opa"><a href=""><img class="earth" src="./img/earth.png" alt="earth"><span>日本語</span>
+                            (<span>JP</span>).</a></li>
+                    <li class="jpy opa"><a href="">¥ <span>JPY</span></a></li>
+                    <li class="sns-icon opa"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="sns-icon opa"><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="sns-icon opa"><a href=""><img class="insta-logo" src="./img/instagram.png"
+                                alt="instagram-logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- フッターラスト -->
+
     <script src="jQuery.js"></script>
+    <script src="fitie.js"></script>
 </body>
