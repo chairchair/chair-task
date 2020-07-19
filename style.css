@@ -8,7 +8,8 @@
 /* ヘッダースタート */
 
 header {
-    width: 1263px;
+    width: 100%;
+    margin: 0 auto;
     background-color: #ffffff;
     position: fixed;
     border-bottom: solid 1px rgba(176, 176, 176, 0.3);
@@ -18,12 +19,18 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
     z-index: 5;
 }
 
 .main-nav {
     width: 1099px;
 }
+
+
 
 .main-nav ul {
     margin-left: 24px;
@@ -67,7 +74,7 @@ header {
     font-weight: 600;
     line-height: 36px;
     border-radius: 8px;
-margin-right: 76px;
+    margin-right: 76px;
 }
 
 .h-start:hover {
@@ -83,7 +90,8 @@ margin-right: 76px;
 /* ヘッダーラスト */
 
 main {
-    width: 1263px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* モーダルスタート */
@@ -165,7 +173,7 @@ main {
     border-top: none;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     padding-left: 10px;
 }
 
@@ -173,6 +181,7 @@ main {
     padding-right: 210px;
     padding-left: 25px;
 }
+
 .entry {
     line-height: 64px;
     font-size: 16px;
@@ -259,7 +268,8 @@ main {
 /* メインビジュアル　スタート */
 
 .main-v {
-    width: 1263px;
+    width: 100%;
+    max-width: 1600px;
     height: 681px;
     margin: 0 auto;
     box-shadow: 0px -200px 200px rgba(0, 0, 0, 0.4) inset;
@@ -267,7 +277,7 @@ main {
     background-image: url(./img/mv.jpg);
     background-repeat: no-repeat;
     background-position: 0 81px;
-    background-size:cover;
+    background-size: cover;
 }
 
 .select-box {
@@ -277,7 +287,7 @@ main {
     background-color: #ffffff;
     position: absolute;
     top: 159px;
-    left: 711px;
+    right: 90px;
 }
 
 .select-box h1 {
@@ -325,7 +335,6 @@ main {
     background-repeat: no-repeat;
     background-size: 18px 10px;
     background-position: right 10px center;
-
 }
 
 .guest {
@@ -472,23 +481,23 @@ main {
 
 .example {
     width: 433px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .example-icon {
-    width:45px;
-height: auto;
-margin-bottom: 10px;
+    width: 45px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .example-p01 {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .example-p02 {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 16px;
     line-height: 22px;
     color: #767676;
@@ -497,7 +506,7 @@ margin-bottom: 10px;
 .example-link {
     display: inline-block;
     width: 224px;
-    line-height: 48px;
+    line-height: 44px;
     border: solid 2px #484848;
     border-radius: 5px;
     text-align: center;
@@ -651,7 +660,9 @@ margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
 }
-
+.example02{
+    margin-top: 80px;
+}
 /* シンプル決済 ラスト */
 
 /* 夢を共有　スタート */
@@ -882,7 +893,9 @@ margin-bottom: 10px;
 /* リスティング　スタート */
 
 .listing {
+    margin: 0 auto;
     width: 100%;
+    max-width: 1280px;
     height: 440px;
     margin-bottom: 64px;
     position: relative;
@@ -919,22 +932,27 @@ margin-bottom: 10px;
 /* フッタースタート */
 
 footer {
-    width: 1263px!important;
+    width: 100%;
+    margin: 0 auto;
+    border-top: solid 1px #e4e4e4;
+padding: 0 80px;
 }
 
 .f-menu {
-    width: 1263px;
+    width: 100%;
+    max-width:1260px;
     margin: 0 auto;
-    border-top: solid 1px #e4e4e4;
-    padding: 48px 44px 51px 56px;
+    padding: 48px 0px 51px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .f-menu ul {
     width: 257px;
-    margin-left: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -963,17 +981,22 @@ footer {
 }
 
 .f-bottom {
-    width: 1103px;
+    width:100%;
+    max-width: 1280px;
     margin: 0 auto;
     border-top: solid 1px #e4e4e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .copyright {
-    width: 730px;
+    width: 600px;
     padding: 25px 0;
+    letter-spacing:-0.5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -986,6 +1009,7 @@ footer {
     font-size: 14px;
     line-height: 18px;
     line-height: 20px;
+
 }
 
 .cr-p01:hover {
@@ -1011,10 +1035,10 @@ footer {
 .copyright ul li::before {
     content: "";
     position: absolute;
-    top: 7px;
-    left: -8px;
-    width: 2px;
-    height: 2px;
+    top: 9px;
+    left: -10px;
+    width: 1.5px;
+    height: 1.5px;
     display: block;
     background-color: #000000;
     border-radius: 100%;
@@ -1026,7 +1050,7 @@ footer {
 }
 
 .sns-link {
-    margin: 25px 0 0 40px;
+    margin-top: 25px;
 }
 
 .sns-link ul {
