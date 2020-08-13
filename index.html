@@ -17,18 +17,24 @@
 
     <!-- ヘッダースタート -->
     <header>
+        <a class="h-logo href=""><img src=" ./img/logo.png" alt="logo"></a>
         <nav class="main-nav">
             <ul>
-                <li class="h-logo">
-                    <a href=""><img class="h-logo" src="./img/logo.png" alt="logo"></a>
-                </li>
                 <li class="overview"><a href="">概要</a></li>
+                <li class="h-dot"><a class="u-line" href="">準備</a></li>
+                <li class="h-dot"><a class="u-line" href="">安全</a></li>
+                <li class="h-dot"><a class="u-line" href="">マネープラン</a></li>
+            </ul>
+        </nav>
+        <p class="h-start modal-switch">はじめる</p>
+        <nav class="r-main-nav">
+            <ul>
+                <li class="r-overview"><a href="">概要</a></li>
                 <li><a class="u-line" href="">準備</a></li>
                 <li><a class="u-line" href="">安全</a></li>
                 <li><a class="u-line" href="">マネープラン</a></li>
             </ul>
         </nav>
-        <p class="h-start" id="modal-switch">はじめる</p>
     </header>
     <!-- ヘッダーラスト -->
 
@@ -36,7 +42,7 @@
         <!-- モーダルスタート -->
         <article class="modal-wrapper" id="modal">
             <div class="modal-w">
-                <p class="entry"><i class="fas fa-times" id="modal-close"></i>ログイン</p>
+                <p class="entry"><i class="fas fa-times modal-close"></i>ログイン</p>
                 <div class="m-scroll">
                     <form action="" method="post">
                         <div class="m-form">
@@ -63,11 +69,14 @@
                     <p class="already-a">すでにアカウントをお持ちですか？<a href="">ログイン</a></p>
                 </div>
             </div>
+
         </article>
         <!-- モーダルラスト -->
 
         <!-- メインビジュアル　スタート -->
         <article class="main-v">
+            <p class="r-h-logo" id="r-nav-open"><span class="r-logo-change"><img src="./img/r-logo.png"
+                        alt="logo"></span><i class="fas fa-chevron-down logo-down"></i></p>
             <section class="select-box">
                 <h1>Airbnbホストになって、暮らしをレベルアップ</h1>
                 <p>宿泊施設の内容を記入</p>
@@ -106,7 +115,7 @@
                         <option value="guest-16">ゲスト16人</option>
                     </select>
                 </form>
-                <a class="start" href="">はじめる</a>
+                <p class="start modal-switch" href="">はじめる</p>
                 <!-- 選択バー×3　ラスト -->
             </section>
         </article>
@@ -194,7 +203,7 @@
                     <p class="example-p01"><img class="example-icon" src="./img/icon01.png"
                             alt="example-icon"><br>ホスト収入でキッチンリフォーム。お家をいろいろアップグレードしました。</p>
                     <p class="example-p02">Tessaさんはロンドン在住。ホストになって世界が（懐も）広がりました</p>
-                    <a class="example-link href="">ホスト実践例をチェック</a>
+                    <a class="example-link" href="">ホスト実践例をチェック</a>
                 </div>
             </div>
         </section>
@@ -202,19 +211,19 @@
 
         <!-- 夢を共有　スタート -->
         <section class=" dream-share">
-                        <h2>夢を共有する仲間が世界中に</h2>
-                        <div class="d-share-text">
-                            <p class="d-share-p01">290万</p>
-                            <p class="d-share-p02">Airbnbのホスト</p>
-                        </div>
-                        <div class="d-share-text">
-                            <p class="d-share-p01">80万</p>
-                            <p class="d-share-p02">Airbnbにおける毎晩の平均宿泊数</p>
-                        </div>
-                        <div class="d-share-text">
-                            <p class="d-share-p01">14,000</p>
-                            <p class="d-share-p02">月あたりの新規登録ホスト数</p>
-                        </div>
+            <h2>夢を共有する仲間が世界中に</h2>
+            <div class="d-share-text">
+                <p class="d-share-p01">290万</p>
+                <p class="d-share-p02">Airbnbのホスト</p>
+            </div>
+            <div class="d-share-text">
+                <p class="d-share-p01">80万</p>
+                <p class="d-share-p02">Airbnbにおける毎晩の平均宿泊数</p>
+            </div>
+            <div class="d-share-text">
+                <p class="d-share-p01">14,000</p>
+                <p class="d-share-p02">月あたりの新規登録ホスト数</p>
+            </div>
         </section>
         <!-- 夢を共有　ラスト -->
 
@@ -254,25 +263,31 @@
             <div class="detail-contents">
                 <a href="" class="detail-link">
                     <img src="./img/489faa5d-9519-48fa-aa0e-fe9673165e43.jpg" alt="detail-img">
-                    <p class="detail-p01" href="">初期設定</p>
-                    <p class="detail-p02" href="">ホスティング入門ガイド</p>
-                    <p class="detail-p03" href="">もっと詳しく</p>
+                    <div class="d-link-text">
+                        <p class="detail-p01" href="">初期設定</p>
+                        <p class="detail-p02" href="">ホスティング入門ガイド</p>
+                        <p class="detail-p03" href="">もっと詳しく</p>
+                    </div>
                 </a>
             </div>
             <div class="detail-contents">
                 <a href="" class="detail-link">
                     <img src="./img/b77eb430-aa14-4ceb-a832-109341f798cd.jpg" alt="detail-img">
-                    <p class="detail-p01" href=""> 安全</p>
-                    <p class="detail-p02" href="">ホストを守るAirbnbのしくみ</p>
-                    <p class="detail-p03" href="">もっと詳しく</p>
+                    <div class="d-link-text">
+                        <p class="detail-p01" href=""> 安全</p>
+                        <p class="detail-p02" href="">ホストを守るAirbnbのしくみ</p>
+                        <p class="detail-p03" href="">もっと詳しく</p>
+                    </div>
                 </a>
             </div>
             <div class="detail-contents">
                 <a href="" class="detail-link">
                     <img src="./img/1ad4d764-38a6-464b-8fdd-b0f3339adf2f.jpg" alt="detail-img">
-                    <p class="detail-p01" href="">マネープラン</p>
-                    <p class="detail-p02" href="">Airbnbで収益を得るには</p>
-                    <p class="detail-p03" href="">もっと詳しく</p>
+                    <div class="d-link-text">
+                        <p class="detail-p01" href="">マネープラン</p>
+                        <p class="detail-p02" href="">Airbnbで収益を得るには</p>
+                        <p class="detail-p03" href="">もっと詳しく</p>
+                    </div>
                 </a>
             </div>
         </section>
@@ -290,6 +305,7 @@
         <div class="f-menu">
             <ul>
                 <li class="f-menu-top">企業情報</li>
+                <li><a class="u-line opa" href="">Airbnbのご利用方法</a></li>
                 <li><a class="u-line opa" href="">ダイバーシティ＆ビロンギング</a></li>
                 <li><a class="u-line opa" href="">アクセシビリティ対応</a></li>
                 <li><a class="u-line opa" href="">信頼＆安全</a></li>
@@ -325,14 +341,15 @@
         </div>
         <div class="f-bottom">
             <div class="copyright">
-                <p class="cr-p01 u-line opa">Airbnb Global Services Limited<br> 観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)
+                <p class="cr-p01 u-line opa">Airbnb Global Services Limite<span><br></span>
+                    観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)
                 </p>
                 <p class="cr-p02">© 2020 Airbnb, Inc. All rights reserved</p>
                 <ul>
-                    <li><a class="u-line opa" href="">プライバシー</a></li>
-                    <li><a class="u-line opa" href="">利用規約</a></li>
-                    <li><a class="u-line opa" href="">サイトマップ</a></li>
-                    <li><a class="u-line opa" href="">企業情報</a></li>
+                    <li><a class="u-line opa dot-top" href="">プライバシー</a></li>
+                    <li><a class="u-line opa dot" href="">利用規約</a></li>
+                    <li><a class="u-line opa dot" href="">サイトマップ</a></li>
+                    <li><a class="u-line opa dot" href="">企業情報</a></li>
                 </ul>
             </div>
             <div class="sns-link">

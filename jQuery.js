@@ -1,11 +1,15 @@
 $(function () {
     // モーダルウィンドウ開
-    $('#modal-switch').click(function () {
+    $('.modal-switch').click(function () {
         $('#modal').fadeIn();
+        $('.modal-w').css('display', 'block');
+        $('.r-h-logo').css('visibility', 'hidden');
     });
     // モーダルウィンドウ閉
-    $('#modal-close').click(function () {
+    $('.modal-close').click(function () {
         $('#modal').fadeOut();
+        $('.modal-w').css('display', 'none');
+        $('.r-h-logo').css('visibility', 'visible');
     });
 
     // モーダルバー上段の枠
@@ -52,4 +56,47 @@ $(function () {
     $('.listing a').click(function () {
         $(this).css('opacity', '0.8');
     });
+
+    // メディアクエリ740px以下
+    if (window.matchMedia('(max-width: 740px)').matches) {
+
+        // レスポンシブnav開
+        $(document).on('click', '#r-nav-open', function () {
+            $('header').css('visibility', 'visible');
+            $('.r-main-nav').css('position', 'fixed');
+            $('.r-main-nav').css('top', '0');
+            $('.r-logo-change').html('<img src="./img/logo.png" alt="logo">');
+            $('.logo-down').css('color', '#484848');
+            $('body').css('overflow', 'hidden');
+            $('.logo-down').css('transform', 'rotate(180deg)');
+            $('.logo-down').css('transition', 'all,0.3s');
+            $('.r-h-logo').attr('id', 'r-nav-close');
+        });
+        // レスポンシブnav閉
+        $(document).on('click', '#r-nav-close', function () {
+            $('header').css('visibility', 'hidden');
+            $('.r-main-nav').css('position', 'absolute');
+            $('.r-main-nav').css('top', '-100vw');
+            $('.r-logo-change').html('<img src="./img/r-logo.png" alt="logo">');
+            $('.logo-down').css('color', '#FFFFFF');
+            $('body').css('overflow', 'visible');
+            $('.logo-down').css('transform', 'rotate(-180deg)');
+            $('.logo-down').css('transition', 'all,0.3s');
+            $('.r-h-logo').attr('id', 'r-nav-open');
+        });
+
+        // レスポンシブヘッダー（スクロールすると表示、非表示）
+        $(function () {
+            let header = $('header');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 500 && $(this).scrollTop() < 7360) {
+                    $('header').css('visibility', 'visible');
+                    $('.h-start').css('display', 'block');
+                } else {
+                    $('header').css('visibility', 'hidden');
+                    $('.h-start').css('display', 'none');
+                }
+            });
+        });
+    };
 });

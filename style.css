@@ -5,6 +5,10 @@
     color: #484848;
 }
 
+html, body {
+    height: 100%;
+}
+
 /* ヘッダースタート */
 
 header {
@@ -22,18 +26,27 @@ header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-
     z-index: 5;
+}
+
+.h-logo {
+    display: inline-block;
+    width: 33px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.h-logo img {
+    width: 100%;
+    height: auto;
 }
 
 .main-nav {
     width: 1099px;
 }
 
-
-
 .main-nav ul {
-    margin-left: 24px;
+    margin-left: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -50,17 +63,8 @@ header {
     text-decoration: none;
 }
 
-.h-logo {
-    line-height: 58px !important;
-    width: 33px;
-    height: auto;
-}
-
 .overview {
     border-bottom: solid 2px #484848;
-}
-
-.overview {
     opacity: 0.9;
 }
 
@@ -87,6 +91,42 @@ header {
     opacity: 0.8;
 }
 
+.r-main-nav {
+    display: none;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+.r-main-nav ul {
+    width: auto;
+    margin-top: 90px;
+    margin-left: 47px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.r-main-nav ul li {
+    line-height: 55px;
+}
+
+.r-main-nav ul li a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.r-overview {
+    margin-bottom: 10px;
+    border-bottom: solid 1px #e4e4e4;
+    opacity: 0.9;
+}
+
 /* ヘッダーラスト */
 
 main {
@@ -111,10 +151,24 @@ main {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 570px;
-    height: 570px;
+    height: auto;
     border-radius: 15px;
     background-color: #ffffff;
     opacity: 1;
+}
+
+.entry {
+    text-align: center;
+    line-height: 64px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #222222;
+    border-bottom: solid 1px rgba(176, 176, 176, 0.3);
+}
+
+.modal-close {
+    float: left;
+    padding: 25px 0 0 25px;
 }
 
 .m-scroll {
@@ -177,19 +231,6 @@ main {
     padding-left: 10px;
 }
 
-#modal-close {
-    padding-right: 210px;
-    padding-left: 25px;
-}
-
-.entry {
-    line-height: 64px;
-    font-size: 16px;
-    font-weight: 800;
-    border-bottom: 1px rgba(176, 176, 176, 0.3);
-    color: #222222;
-}
-
 .m-text {
     font-size: 12px;
     line-height: 16px;
@@ -211,6 +252,7 @@ main {
 .m-center {
     font-size: 12px;
     margin: 0 auto 20px auto;
+
 }
 
 .m-center:before {
@@ -279,6 +321,33 @@ main {
     background-position: 0 81px;
     background-size: cover;
 }
+
+/* レスポンシブ化時ロゴ　スタート */
+
+.r-h-logo {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 33px;
+    height: auto;
+}
+
+.r-h-logo img {
+    width: 33px;
+    height: auto;
+}
+
+.logo-down {
+    display: none;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    display: block;
+    color: #FFFFFF;
+}
+
+/* レスポンシブ化時ロゴ　ラスト */
 
 .select-box {
     width: 460px;
@@ -511,12 +580,12 @@ main {
     border-radius: 5px;
     text-align: center;
     font-weight: 800;
-    font-size: f 16px;
+    font-size: 16px;
 }
 
 .dennis {
     width: 516px;
-    height: 516px;
+    height: auto;
 }
 
 /* 3ステップで簡単　ラスト */
@@ -575,13 +644,13 @@ main {
 
 .relief ul li img {
     width: 25px;
-    height: 25px;
+    height: auto;
     margin-right: 15px;
 }
 
 .relief-mv {
     width: 1032px;
-    height: 580px;
+    height: auto;
 }
 
 /* 万一の時も　ラスト */
@@ -647,11 +716,6 @@ main {
     color: #006c70;
 }
 
-.tessa {
-    width: 516px;
-    height: 516px;
-}
-
 .host-into-tessa {
     width: 1032px;
     margin: 0 auto;
@@ -660,9 +724,16 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.example02{
+
+.tessa {
+    width: 516px;
+    height: auto;
+}
+
+.example02 {
     margin-top: 80px;
 }
+
 /* シンプル決済 ラスト */
 
 /* 夢を共有　スタート */
@@ -857,8 +928,6 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
 }
 
 .detail-link img {
@@ -935,20 +1004,21 @@ footer {
     width: 100%;
     margin: 0 auto;
     border-top: solid 1px #e4e4e4;
-padding: 0 80px;
+    padding: 0 80px;
+    background-color: #F7F7F7;
 }
 
 .f-menu {
     width: 100%;
-    max-width:1260px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 48px 0px 51px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .f-menu ul {
@@ -970,18 +1040,14 @@ padding: 0 80px;
     margin-bottom: 17px;
 }
 
-.f-menu ul li {
+.f-menu ul li a {
+    display: block;
     margin-bottom: 18px;
     font-size: 14px;
-    line-height: 18px;
-}
-
-.f-menu ul li {
-    color: #222222;
 }
 
 .f-bottom {
-    width:100%;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     border-top: solid 1px #e4e4e4;
@@ -989,14 +1055,14 @@ padding: 0 80px;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .copyright {
     width: 600px;
     padding: 25px 0;
-    letter-spacing:-0.5px;
+    letter-spacing: -0.5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1009,7 +1075,6 @@ padding: 0 80px;
     font-size: 14px;
     line-height: 18px;
     line-height: 20px;
-
 }
 
 .cr-p01:hover {
@@ -1032,7 +1097,7 @@ padding: 0 80px;
     position: relative;
 }
 
-.copyright ul li::before {
+.dot-top::before, .dot::before {
     content: "";
     position: absolute;
     top: 9px;
@@ -1067,6 +1132,7 @@ padding: 0 80px;
 
 .sns-link ul li a span {
     text-decoration: underline;
+    color: #222222;
 }
 
 .jpy {
@@ -1075,23 +1141,23 @@ padding: 0 80px;
 
 .earth {
     width: 15px;
-    height: 15px;
+    height: auto;
     margin: 0 10px 3px 0;
 }
 
 .fab fa-facebook-f {
     width: 18px;
-    height: 18px;
+    height: auto;
 }
 
 .fab fa-twitter {
     width: 18px;
-    height: 18px;
+    height: auto;
 }
 
 .insta-logo {
     width: 18px;
-    height: 18px;
+    height: auto;
 }
 
 .sns-icon {
